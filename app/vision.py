@@ -2,7 +2,7 @@ import base64
 from openai import OpenAI
 
 # It is highly recommended to use environment variables for keys
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="")
 
 def detect_ingredients(image_bytes: bytes) -> str:
     # Convert bytes to base64 string
