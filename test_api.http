@@ -1,0 +1,10 @@
+### Send food image
+POST http://127.0.0.1:8000/api/detect-ingredients
+Content-Type: multipart/form-data; boundary=boundary123
+
+--boundary123
+Content-Disposition: form-data; name="file"; filename="food.jpg"
+Content-Type: image/jpeg
+
+< ./food.jpg
+--boundary123--
